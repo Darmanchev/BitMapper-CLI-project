@@ -38,22 +38,3 @@ g++ -std=c++17 *.cpp -o bitmapper
 
 # Run the application
 ./bitmapper
-
-
-## 🎮 Usage Examples
-
-### Basic Transformation (PPM to PGM)
-Load a high-quality color image, convert it to grayscale, and save:
-```bash
-> load sunflower.ppm
-> grayscale
-> saveas sunflower_gray.pgm
-> load image1.pbm image2.pgm image3.ppm
-> session info
-# Output: Current session contains 3 images. Active: image1.pbm
-> paste logo.pbm background.pbm 10 20
-> save
-> negative
-> rotate left
-> undo    # Reverts rotation
-> redo    # Re-applies rotation
